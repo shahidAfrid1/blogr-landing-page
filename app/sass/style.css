@@ -443,4 +443,44 @@ main .hero .learn:hover {
   background: white;
   color: #ff8f70;
 }
+
+.design {
+  position: relative;
+  width: 100%;
+  padding: 105px 25px;
+  text-align: center;
+  color: #3f4164;
+  font-size: 19px;
+}
+
+.design .illustration {
+  width: 100%;
+  height: 325px;
+  margin: 48px 0 55px 0;
+  background-image: url("/images/illustration-editor-mobile.svg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 481px) {
+  .design .illustration {
+    background-size: contain;
+  }
+}
+
+@media (min-width: 769px) {
+  .design .illustration {
+    position: absolute;
+    background-color: url("/images/illustration-editor-desktop.svg");
+  }
+}
+
+.design .container .para > h2 {
+  margin: 25px 0;
+}
+
+.design .container .para > p {
+  font-size: 18px;
+}
 /*# sourceMappingURL=style.css.map */
