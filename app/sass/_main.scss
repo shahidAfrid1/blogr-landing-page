@@ -1,0 +1,289 @@
+main {
+  width: 100vw;
+  height: 600px;
+  max-width: 100%;
+  background-image: url("/images/bg-pattern-intro-mobile.svg"),
+    linear-gradient(135deg, $Verylightred, $Lightred);
+  background-position: 35% 34%;
+  background-size: 350%, 100%;
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 100px;
+  padding: 55px 25px;
+  @include lgl {
+    background-image: url("/images/bg-pattern-intro-desktop.svg"),
+      linear-gradient(135deg, $Verylightred, $Lightred);
+    background-position: 25% 52%;
+    background-size: 220%, 100%;
+    padding: 60px 162px;
+  }
+
+  > nav {
+    .links-mobile {
+      @include tbl {
+        display: none;
+      }
+      .logo {
+        width: 84px;
+      }
+      .hamberger-button {
+        width: 35px;
+        height: 23px;
+        cursor: pointer;
+        .line {
+          width: 100%;
+          height: 2px;
+          background-color: white;
+          border-radius: 30px;
+        }
+        .line2 {
+          margin: 5px 0;
+        }
+        &.active {
+          .line {
+            transition: all 100ms ease-in-out;
+            transform-origin: 8px 1px;
+          }
+          .line1 {
+            transform: rotate(45deg);
+          }
+          .line2 {
+            opacity: 0;
+          }
+          .line3 {
+            transform: rotate(-45deg);
+          }
+        }
+      }
+      .hamberger-menu {
+        width: 100%;
+        height: 100vh;
+        padding: 0 25px;
+        margin-top: 125px;
+        background-color: #00000005;
+        position: absolute;
+        visibility: hidden;
+        top: 0;
+        left: 0;
+        &.active {
+          visibility: visible;
+        }
+        .container {
+          width: 100%;
+          height: auto;
+          background-color: white;
+          border-radius: 3px;
+          padding: 35px 25px;
+          text-align: center;
+
+          .dropdown-menu {
+            margin-bottom: 25px;
+            width: 100%;
+            height: 20px;
+            overflow: hidden;
+            font-size: 16px;
+            font-weight: 700;
+            color: $Verydarkdesaturatedblue;
+            &.active {
+              height: auto;
+              overflow: visible;
+              opacity: 0.8;
+              .dropdown-item {
+                > p {
+                  font-size: 16px;
+                }
+                > img {
+                  transform: rotate(180deg);
+                }
+              }
+            }
+            .dropdown-item {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              cursor: pointer;
+              > p {
+                font-size: 17px;
+              }
+
+              > img {
+                margin-left: 7px;
+              }
+            }
+            .dropdown-container {
+              background-color: #e6e6e6;
+              color: $Verydarkblue;
+              padding-top: 28px;
+              margin-top: 28px;
+              border-radius: 3px;
+              font-weight: 600;
+              &-item {
+                font-size: 15px;
+                padding-bottom: 28px;
+              }
+            }
+          }
+
+          > hr {
+            color: $Grayishblue;
+          }
+          > form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .login {
+              margin: 38px 0 22px 0;
+              background: none;
+              border: none;
+              font-family: "overpass", sans-serif;
+              font-size: 19px;
+              font-weight: 600;
+              color: $Verydarkgrayblue;
+              cursor: pointer;
+            }
+            .sign-up {
+              width: 140px;
+              height: 50px;
+              background: linear-gradient(135deg, $Verylightred, $Lightred);
+              color: $White;
+              border: none;
+              border-radius: 35px;
+              font-size: 17px;
+              font-weight: 500;
+              font-family: "ubuntu", sans-serif;
+            }
+          }
+        }
+      }
+    }
+    .links-desktop {
+      @include rwd(480px) {
+        display: none;
+      }
+      width: 100%;
+      .links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        > img {
+          width: 101px;
+          height: 45px;
+          margin-right: 65px;
+        }
+        .links-menu {
+          display: flex;
+          .dropdown-menu-desktop {
+            margin-left: 35px;
+            position: relative;
+            cursor: pointer;
+            &.active {
+              .dropdown-container {
+                display: block;
+              }
+            }
+            .dropdown-item-desktop {
+              display: flex;
+              > p {
+                color: white;
+                font-size: 16px;
+                font-weight: 700;
+                margin-right: 10px;
+              }
+              > img {
+                background: white;
+              }
+            }
+            .dropdown-container {
+              position: absolute;
+              background-color: white;
+              padding: 35px 65px 15px 25px;
+              margin-top: 20px;
+              left: -25px;
+              border-radius: 5px;
+              display: none;
+              &-item {
+                color: $Verydarkdesaturatedblue;
+                font-size: 15px;
+                margin-bottom: 20px;
+                cursor: pointer;
+                &:hover {
+                  font-weight: 700;
+                }
+              }
+            }
+          }
+        }
+      }
+      .nav-buttons{
+        .login {
+          margin: 38px 0 22px 0;
+          background: none;
+          border: none;
+          font-family: "overpass", sans-serif;
+          font-size: 19px;
+          font-weight: 600;
+          color: white;
+          cursor: pointer;
+        }
+        .sign-up {
+          width: 140px;
+          height: 50px;
+          background: white;
+          color: $Verylightred;
+          border: none;
+          border-radius: 35px;
+          font-size: 17px;
+          font-weight: 500;
+          font-family: "ubuntu", sans-serif;
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+  .hero {
+    margin-top: 115px;
+    text-align: center;
+    color: white;
+    @include tbl {
+      margin-top: 133px;
+    }
+
+    > h1 {
+      font-size: 37px;
+      font-weight: 500;
+      @include tbl {
+        font-size: 55px;
+      }
+    }
+
+    > p {
+      margin: 25px 0 50px 0;
+      font-size: 19px;
+      @include tbl {
+        font-size: 18.5px;
+      }
+    }
+
+    > button {
+      width: 140px;
+      height: 50px;
+      margin: 0 8px;
+      font-size: 16px;
+      font-weight: 700;
+      font-family: "ubuntu", sans-serif;
+      border-radius: 35px;
+    }
+
+    .free {
+      border: none;
+      background: white;
+      color: $Verylightred;
+    }
+
+    .learn {
+      border: 1px solid white;
+      background: transparent;
+      color: white;
+    }
+  }
+}
