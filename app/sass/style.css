@@ -58,7 +58,7 @@ main {
     background-image: url("/images/bg-pattern-intro-desktop.svg"), linear-gradient(135deg, #ff8f70, #ff3d54);
     background-position: 25% 52%;
     background-size: 220%, 100%;
-    padding: 60px 162px;
+    padding: 60px 10.764% 0 11.528%;
   }
 }
 
@@ -260,22 +260,35 @@ main > nav .links-desktop .links {
           align-items: center;
 }
 
-main > nav .links-desktop .links > img {
+main > nav .links-desktop .links .logo {
   width: 101px;
   height: 45px;
-  margin-right: 65px;
 }
 
 main > nav .links-desktop .links .links-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: 57px;
 }
 
 main > nav .links-desktop .links .links-menu .dropdown-menu-desktop {
   margin-left: 35px;
   position: relative;
   cursor: pointer;
+}
+
+main > nav .links-desktop .links .links-menu .dropdown-menu-desktop.active .dropdown-item-desktop {
+  opacity: 1;
+}
+
+main > nav .links-desktop .links .links-menu .dropdown-menu-desktop.active .dropdown-item-desktop > p {
+  text-decoration: underline;
+}
+
+main > nav .links-desktop .links .links-menu .dropdown-menu-desktop.active .dropdown-item-desktop > img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 main > nav .links-desktop .links .links-menu .dropdown-menu-desktop.active .dropdown-container {
@@ -286,6 +299,17 @@ main > nav .links-desktop .links .links-menu .dropdown-menu-desktop .dropdown-it
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: .8;
+}
+
+main > nav .links-desktop .links .links-menu .dropdown-menu-desktop .dropdown-item-desktop:hover {
+  opacity: 1;
 }
 
 main > nav .links-desktop .links .links-menu .dropdown-menu-desktop .dropdown-item-desktop > p {
@@ -296,7 +320,8 @@ main > nav .links-desktop .links .links-menu .dropdown-menu-desktop .dropdown-it
 }
 
 main > nav .links-desktop .links .links-menu .dropdown-menu-desktop .dropdown-item-desktop > img {
-  background: white;
+  width: 10px;
+  height: 10px;
 }
 
 main > nav .links-desktop .links .links-menu .dropdown-menu-desktop .dropdown-container {
@@ -321,7 +346,6 @@ main > nav .links-desktop .links .links-menu .dropdown-menu-desktop .dropdown-co
 }
 
 main > nav .links-desktop .nav-buttons .login {
-  margin: 38px 0 22px 0;
   background: none;
   border: none;
   font-family: "overpass", sans-serif;
@@ -329,6 +353,11 @@ main > nav .links-desktop .nav-buttons .login {
   font-weight: 600;
   color: white;
   cursor: pointer;
+  opacity: .8;
+}
+
+main > nav .links-desktop .nav-buttons .login:hover {
+  opacity: 1;
 }
 
 main > nav .links-desktop .nav-buttons .sign-up {
@@ -344,6 +373,11 @@ main > nav .links-desktop .nav-buttons .sign-up {
   margin-left: 30px;
 }
 
+main > nav .links-desktop .nav-buttons .sign-up:hover {
+  background: #f7007f3d;
+  color: white;
+}
+
 main .hero {
   margin-top: 115px;
   text-align: center;
@@ -357,8 +391,8 @@ main .hero {
 }
 
 main .hero > h1 {
-  font-size: 37px;
-  font-weight: 500;
+  font-size: 9.326vw;
+  font-weight: 600;
 }
 
 @media (min-width: 481px) {
@@ -379,9 +413,9 @@ main .hero > p {
 }
 
 main .hero > button {
-  width: 140px;
+  width: 135px;
   height: 50px;
-  margin: 0 8px;
+  margin: 10px 8px;
   font-size: 16px;
   font-weight: 700;
   font-family: "ubuntu", sans-serif;
@@ -394,9 +428,19 @@ main .hero .free {
   color: #ff8f70;
 }
 
+main .hero .free:hover {
+  background: #f7007f3d;
+  color: white;
+}
+
 main .hero .learn {
   border: 1px solid white;
   background: transparent;
   color: white;
+}
+
+main .hero .learn:hover {
+  background: white;
+  color: #ff8f70;
 }
 /*# sourceMappingURL=style.css.map */

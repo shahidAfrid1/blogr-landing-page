@@ -14,7 +14,7 @@ main {
       linear-gradient(135deg, $Verylightred, $Lightred);
     background-position: 25% 52%;
     background-size: 220%, 100%;
-    padding: 60px 162px;
+    padding: 60px 10.764% 0 11.528%;
   }
 
   > nav {
@@ -165,32 +165,50 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
-        > img {
+        .logo {
           width: 101px;
           height: 45px;
-          margin-right: 65px;
+
         }
         .links-menu {
           display: flex;
+          margin-left: 57px;
           .dropdown-menu-desktop {
             margin-left: 35px;
             position: relative;
             cursor: pointer;
             &.active {
+              .dropdown-item-desktop{
+                opacity: 1;
+                > p{
+                  text-decoration: underline;
+                }
+                > img{
+                  transform: rotate(180deg);
+                }
+              }
               .dropdown-container {
                 display: block;
               }
             }
             .dropdown-item-desktop {
               display: flex;
+              justify-content: center;
+              align-items: center;
+              opacity: .8;
+              &:hover{
+                opacity: 1;
+              }
               > p {
                 color: white;
                 font-size: 16px;
                 font-weight: 700;
                 margin-right: 10px;
+
               }
               > img {
-                background: white;
+                width: 10px;
+                height: 10px;
               }
             }
             .dropdown-container {
@@ -214,9 +232,9 @@ main {
           }
         }
       }
-      .nav-buttons{
+      .nav-buttons {
         .login {
-          margin: 38px 0 22px 0;
+      
           background: none;
           border: none;
           font-family: "overpass", sans-serif;
@@ -224,6 +242,10 @@ main {
           font-weight: 600;
           color: white;
           cursor: pointer;
+          opacity: .8;
+              &:hover{
+                opacity: 1;
+              }
         }
         .sign-up {
           width: 140px;
@@ -236,6 +258,10 @@ main {
           font-weight: 500;
           font-family: "ubuntu", sans-serif;
           margin-left: 30px;
+          &:hover{
+            background: #f7007f3d;
+            color: white;
+          }
         }
       }
     }
@@ -249,8 +275,8 @@ main {
     }
 
     > h1 {
-      font-size: 37px;
-      font-weight: 500;
+      font-size: 9.326vw;
+      font-weight: 600;
       @include tbl {
         font-size: 55px;
       }
@@ -265,9 +291,9 @@ main {
     }
 
     > button {
-      width: 140px;
+      width: 135px;
       height: 50px;
-      margin: 0 8px;
+      margin: 10px 8px;
       font-size: 16px;
       font-weight: 700;
       font-family: "ubuntu", sans-serif;
@@ -278,12 +304,20 @@ main {
       border: none;
       background: white;
       color: $Verylightred;
+      &:hover{
+        background: #f7007f3d;
+        color: white;
+      }
     }
 
     .learn {
       border: 1px solid white;
       background: transparent;
       color: white;
+      &:hover{
+        background: white;
+        color: $Verylightred;
+      }
     }
   }
 }
