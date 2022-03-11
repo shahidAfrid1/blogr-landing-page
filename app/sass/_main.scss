@@ -7,7 +7,7 @@ main {
   background-position: 35% 34%;
   background-size: 350%, 100%;
   background-repeat: no-repeat;
-  border-bottom-left-radius: 100px;
+  border-bottom-left-radius: 7vw;
   padding: 55px 25px;
   @include lgl {
     background-image: url("/images/bg-pattern-intro-desktop.svg"),

@@ -49,7 +49,7 @@ main {
   background-position: 35% 34%;
   background-size: 350%, 100%;
   background-repeat: no-repeat;
-  border-bottom-left-radius: 100px;
+  border-bottom-left-radius: 7vw;
   padding: 55px 25px;
 }
 
@@ -623,5 +623,107 @@ main .hero .learn:hover {
 
 .infrastructure .description > p {
   font-size: 17px;
+}
+
+.tools {
+  position: relative;
+  width: 100%;
+  padding: 80px 25px 100px;
+  text-align: center;
+  color: #3f4164;
+  font-size: 19px;
+  overflow: hidden;
+}
+
+@media (min-width: 769px) {
+  .tools {
+    padding: 105px 80px 100px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .tools {
+    padding: 21% 7% 21.56%;
+  }
+}
+
+.tools .container {
+  position: relative;
+}
+
+@media (min-width: 1025px) {
+  .tools .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+
+.tools .container > img {
+  width: 126%;
+  position: relative;
+  left: -13%;
+}
+
+@media (min-width: 481px) {
+  .tools .container > img {
+    width: 435.8px;
+    position: initial;
+  }
+}
+
+@media (min-width: 769px) {
+  .tools .container > img {
+    width: 541.8px;
+    position: initial;
+  }
+}
+
+@media (max-width: 1024px) {
+  .tools .container > img.close-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 1025px) {
+  .tools .container > img {
+    position: absolute;
+    width: 78%;
+    top: -35%;
+    left: -39%;
+  }
+  .tools .container > img.close-mobile {
+    display: none;
+  }
+}
+
+.tools .container .description {
+  display: block;
+}
+
+@media (min-width: 1025px) {
+  .tools .container .description {
+    text-align: left;
+    width: 44.3%;
+  }
+}
+
+.tools .container .description > h2 {
+  font-size: 28px;
+  margin: 25px 0;
+}
+
+@media (min-width: 1025px) {
+  .tools .container .description > h2 {
+    font-size: 25px;
+  }
+}
+
+.tools .container .description > p {
+  font-size: 18px;
 }
 /*# sourceMappingURL=style.css.map */
