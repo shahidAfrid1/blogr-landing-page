@@ -168,22 +168,30 @@ main {
         .logo {
           width: 101px;
           height: 45px;
-
         }
         .links-menu {
           display: flex;
-          margin-left: 57px;
+          margin-left: 20px;
+          @include rwd(768px) {
+            position: absolute;
+            top: 18%;
+            left: 41%;
+            transform: translate(-50%, -50%);
+          }
+          @include lgl {
+            margin-left: 57px;
+          }
           .dropdown-menu-desktop {
             margin-left: 35px;
             position: relative;
             cursor: pointer;
             &.active {
-              .dropdown-item-desktop{
+              .dropdown-item-desktop {
                 opacity: 1;
-                > p{
+                > p {
                   text-decoration: underline;
                 }
-                > img{
+                > img {
                   transform: rotate(180deg);
                 }
               }
@@ -195,8 +203,8 @@ main {
               display: flex;
               justify-content: center;
               align-items: center;
-              opacity: .8;
-              &:hover{
+              opacity: 0.8;
+              &:hover {
                 opacity: 1;
               }
               > p {
@@ -204,7 +212,6 @@ main {
                 font-size: 16px;
                 font-weight: 700;
                 margin-right: 10px;
-
               }
               > img {
                 width: 10px;
@@ -234,7 +241,6 @@ main {
       }
       .nav-buttons {
         .login {
-      
           background: none;
           border: none;
           font-family: "overpass", sans-serif;
@@ -242,10 +248,10 @@ main {
           font-weight: 600;
           color: white;
           cursor: pointer;
-          opacity: .8;
-              &:hover{
-                opacity: 1;
-              }
+          opacity: 0.8;
+          &:hover {
+            opacity: 1;
+          }
         }
         .sign-up {
           width: 140px;
@@ -258,7 +264,7 @@ main {
           font-weight: 500;
           font-family: "ubuntu", sans-serif;
           margin-left: 30px;
-          &:hover{
+          &:hover {
             background: #f7007f3d;
             color: white;
           }
@@ -278,7 +284,7 @@ main {
       font-size: 9.326vw;
       font-weight: 600;
       @include tbl {
-        font-size: 55px;
+        font-size: 44.75px;
       }
     }
 
@@ -304,7 +310,7 @@ main {
       border: none;
       background: white;
       color: $Verylightred;
-      &:hover{
+      &:hover {
         background: #f7007f3d;
         color: white;
       }
@@ -314,7 +320,7 @@ main {
       border: 1px solid white;
       background: transparent;
       color: white;
-      &:hover{
+      &:hover {
         background: white;
         color: $Verylightred;
       }

@@ -269,7 +269,23 @@ main > nav .links-desktop .links .links-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 57px;
+  margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  main > nav .links-desktop .links .links-menu {
+    position: absolute;
+    top: 18%;
+    left: 41%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+@media (min-width: 1025px) {
+  main > nav .links-desktop .links .links-menu {
+    margin-left: 57px;
+  }
 }
 
 main > nav .links-desktop .links .links-menu .dropdown-menu-desktop {
@@ -305,7 +321,7 @@ main > nav .links-desktop .links .links-menu .dropdown-menu-desktop .dropdown-it
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 main > nav .links-desktop .links .links-menu .dropdown-menu-desktop .dropdown-item-desktop:hover {
@@ -353,7 +369,7 @@ main > nav .links-desktop .nav-buttons .login {
   font-weight: 600;
   color: white;
   cursor: pointer;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 main > nav .links-desktop .nav-buttons .login:hover {
@@ -397,7 +413,7 @@ main .hero > h1 {
 
 @media (min-width: 481px) {
   main .hero > h1 {
-    font-size: 55px;
+    font-size: 44.75px;
   }
 }
 
@@ -447,40 +463,113 @@ main .hero .learn:hover {
 .design {
   position: relative;
   width: 100%;
-  padding: 105px 25px;
+  padding: 105px 25px 270px;
   text-align: center;
   color: #3f4164;
   font-size: 19px;
+  overflow: hidden;
 }
 
-.design .illustration {
-  width: 100%;
-  height: 325px;
+@media (min-width: 769px) {
+  .design {
+    padding: 105px 80px 270px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .design {
+    padding: 160px 165px 265px;
+  }
+}
+
+.design > h1 {
+  font-size: 26px;
+}
+
+@media (min-width: 1025px) {
+  .design > h1 {
+    font-size: 40px;
+    margin-bottom: 108px;
+  }
+}
+
+.design .container {
+  position: relative;
+}
+
+@media (min-width: 1025px) {
+  .design .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.design .container > img {
+  width: 126%;
   margin: 48px 0 55px 0;
-  background-image: url("/images/illustration-editor-mobile.svg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+  position: relative;
+  left: -13%;
 }
 
 @media (min-width: 481px) {
-  .design .illustration {
-    background-size: contain;
+  .design .container > img {
+    width: 435.8px;
+    position: initial;
   }
 }
 
 @media (min-width: 769px) {
-  .design .illustration {
-    position: absolute;
-    background-color: url("/images/illustration-editor-desktop.svg");
+  .design .container > img {
+    width: 541.8px;
+    position: initial;
   }
 }
 
-.design .container .para > h2 {
+@media (max-width: 1024px) {
+  .design .container > img.close-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 1025px) {
+  .design .container > img {
+    position: absolute;
+    width: 78%;
+    top: -64%;
+    left: 60%;
+  }
+  .design .container > img.close-mobile {
+    display: none;
+  }
+}
+
+.design .container .description {
+  display: block;
+}
+
+@media (min-width: 1025px) {
+  .design .container .description {
+    text-align: left;
+    width: 44.3%;
+  }
+}
+
+.design .container .description > h2 {
+  font-size: 28px;
   margin: 25px 0;
 }
 
-.design .container .para > p {
+@media (min-width: 1025px) {
+  .design .container .description > h2 {
+    font-size: 25px;
+  }
+}
+
+.design .container .description > p {
   font-size: 18px;
 }
 /*# sourceMappingURL=style.css.map */
