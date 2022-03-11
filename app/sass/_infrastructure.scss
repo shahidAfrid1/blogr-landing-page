@@ -6,28 +6,39 @@
   background-repeat: no-repeat;
   background-size: 164%;
   background-position: -122px -234px;
-  padding: 227px 25px 125px;
-
-  .mobile-illustration{
-      > img{
-        position: absolute;
-        width: 100%;
-        top: 0;
-        left: 0;
-
-        transform: translate(0%, -45%);
-      }
+  padding: 61% 25px 125px;
+  border-radius: 0 27vw 0 27vw;
+  text-align: center;
+  color: white;
+  @include sml {
+    height: 400px;
+    background-size: 69%;
+    background-position: -210px -460px;
+    padding: 8% 11% 8% 51%;
+    border-radius: 0 7vw 0 7vw;
+    text-align: left;
   }
-  .description{
-      text-align: center;
-      color: white;
-      > h1{
-          font-size: 40px;
-          margin-bottom: 40px;
+  .mobile-illustration {
+    > img {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      transform: translate(0%, -45%);
+      @include sml {
+        width: 38%;
+        transform: translate(21%, -12%);
       }
-      
-      > p{
-          font-size: 18px;
-      }
+    }
+  }
+  .description {
+    > h1 {
+      font-size: 38px;
+      margin-bottom: 40px;
+    }
+
+    > p {
+      font-size: 17px;
+    }
   }
 }

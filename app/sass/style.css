@@ -582,7 +582,21 @@ main .hero .learn:hover {
   background-repeat: no-repeat;
   background-size: 164%;
   background-position: -122px -234px;
-  padding: 227px 25px 125px;
+  padding: 61% 25px 125px;
+  border-radius: 0 27vw 0 27vw;
+  text-align: center;
+  color: white;
+}
+
+@media (min-width: 769px) {
+  .infrastructure {
+    height: 400px;
+    background-size: 69%;
+    background-position: -210px -460px;
+    padding: 8% 11% 8% 51%;
+    border-radius: 0 7vw 0 7vw;
+    text-align: left;
+  }
 }
 
 .infrastructure .mobile-illustration > img {
@@ -594,17 +608,20 @@ main .hero .learn:hover {
           transform: translate(0%, -45%);
 }
 
-.infrastructure .description {
-  text-align: center;
-  color: white;
+@media (min-width: 769px) {
+  .infrastructure .mobile-illustration > img {
+    width: 38%;
+    -webkit-transform: translate(21%, -12%);
+            transform: translate(21%, -12%);
+  }
 }
 
 .infrastructure .description > h1 {
-  font-size: 40px;
+  font-size: 38px;
   margin-bottom: 40px;
 }
 
 .infrastructure .description > p {
-  font-size: 18px;
+  font-size: 17px;
 }
 /*# sourceMappingURL=style.css.map */
