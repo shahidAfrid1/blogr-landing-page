@@ -1,0 +1,33 @@
+.infrastructure {
+  position: relative;
+  width: 100%;
+  background-color: $Verydarkblue;
+  background-image: url("/images/bg-pattern-circles.svg");
+  background-repeat: no-repeat;
+  background-size: 164%;
+  background-position: -122px -234px;
+  padding: 227px 25px 125px;
+
+  .mobile-illustration{
+      > img{
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+
+        transform: translate(0%, -45%);
+      }
+  }
+  .description{
+      text-align: center;
+      color: white;
+      > h1{
+          font-size: 40px;
+          margin-bottom: 40px;
+      }
+      
+      > p{
+          font-size: 18px;
+      }
+  }
+}

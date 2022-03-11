@@ -120,6 +120,7 @@ main > nav .links-mobile .hamberger-menu {
   visibility: hidden;
   top: 0;
   left: 0;
+  z-index: 3;
 }
 
 main > nav .links-mobile .hamberger-menu.active {
@@ -463,7 +464,7 @@ main .hero .learn:hover {
 .design {
   position: relative;
   width: 100%;
-  padding: 105px 25px 270px;
+  padding: 105px 25px 70%;
   text-align: center;
   color: #3f4164;
   font-size: 19px;
@@ -570,6 +571,40 @@ main .hero .learn:hover {
 }
 
 .design .container .description > p {
+  font-size: 18px;
+}
+
+.infrastructure {
+  position: relative;
+  width: 100%;
+  background-color: #1f3f5b;
+  background-image: url("/images/bg-pattern-circles.svg");
+  background-repeat: no-repeat;
+  background-size: 164%;
+  background-position: -122px -234px;
+  padding: 227px 25px 125px;
+}
+
+.infrastructure .mobile-illustration > img {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(0%, -45%);
+          transform: translate(0%, -45%);
+}
+
+.infrastructure .description {
+  text-align: center;
+  color: white;
+}
+
+.infrastructure .description > h1 {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.infrastructure .description > p {
   font-size: 18px;
 }
 /*# sourceMappingURL=style.css.map */
