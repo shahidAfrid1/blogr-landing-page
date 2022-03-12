@@ -14,7 +14,7 @@
     height: 400px;
     background-size: 69%;
     background-position: -210px -460px;
-    padding: 8% 11% 8% 51%;
+    padding: 8% 11% 8% 50.9%;
     border-radius: 0 7vw 0 7vw;
     text-align: left;
   }
@@ -27,18 +27,19 @@
       transform: translate(0%, -45%);
       @include sml {
         width: 38%;
-        transform: translate(21%, -12%);
+        transform: translate(23.1%, -12%);
       }
     }
   }
   .description {
     > h1 {
-      font-size: 38px;
-      margin-bottom: 40px;
+      font-size: 36.5px;
+      margin-bottom: 20px;
     }
 
     > p {
       font-size: 17px;
+      line-height: 1.7;
     }
   }
 }

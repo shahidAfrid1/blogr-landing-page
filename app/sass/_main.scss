@@ -7,15 +7,15 @@ main {
   background-position: 35% 34%;
   background-size: 350%, 100%;
   background-repeat: no-repeat;
-  border-bottom-left-radius: 27vw;
   padding: 55px 25px;
+  border-bottom-left-radius: 27vw;
   @include lgl {
     border-bottom-left-radius: 7vw;
     background-image: url("/images/bg-pattern-intro-desktop.svg"),
       linear-gradient(135deg, $Verylightred, $Lightred);
     background-position: 25% 52%;
     background-size: 220%, 100%;
-    padding: 60px 10.764% 0 11.528%;
+    padding: 60px 11% 0 11.8%;
   }
 
   > nav {
@@ -184,7 +184,7 @@ main {
             margin-left: 57px;
           }
           .dropdown-menu-desktop {
-            margin-left: 35px;
+            margin-left: 8px;
             position: relative;
             cursor: pointer;
             &.active {
@@ -206,6 +206,7 @@ main {
               justify-content: center;
               align-items: center;
               opacity: 0.8;
+              margin-right: 21px;
               &:hover {
                 opacity: 1;
               }
@@ -246,7 +247,7 @@ main {
           background: none;
           border: none;
           font-family: "overpass", sans-serif;
-          font-size: 19px;
+          font-size: 16px;
           font-weight: 600;
           color: white;
           cursor: pointer;
@@ -256,14 +257,14 @@ main {
           }
         }
         .sign-up {
-          width: 140px;
+          width: 138px;
           height: 50px;
           background: white;
-          color: $Verylightred;
+          color: $Lightred;
           border: none;
           border-radius: 35px;
-          font-size: 17px;
-          font-weight: 500;
+          font-size: 15px;
+          font-weight: 700;
           font-family: "ubuntu", sans-serif;
           margin-left: 30px;
           &:hover {
@@ -286,22 +287,23 @@ main {
       font-size: 9.326vw;
       font-weight: 600;
       @include tbl {
-        font-size: 44.75px;
+        font-size: 59.2px;
       }
     }
 
     > p {
-      margin: 25px 0 50px 0;
+      margin: 10px 0 45px 0;
       font-size: 19px;
+      opacity: .8;
       @include tbl {
-        font-size: 18.5px;
+        font-size: 20px;
       }
     }
 
     > button {
       width: 135px;
       height: 50px;
-      margin: 10px 8px;
+      margin: 0 10px;
       font-size: 16px;
       font-weight: 700;
       font-family: "ubuntu", sans-serif;
@@ -311,7 +313,7 @@ main {
     .free {
       border: none;
       background: white;
-      color: $Verylightred;
+      color: $Lightred;
       &:hover {
         background: #f7007f3d;
         color: white;

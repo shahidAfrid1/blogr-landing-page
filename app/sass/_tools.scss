@@ -10,7 +10,7 @@
         padding: 105px 80px 100px;
     }
     @include lgl{
-        padding: 21% 7% 21.56%;
+        padding: 20% 7% 19%;
         
     }
     .container{
@@ -42,28 +42,32 @@
                     display: none;
                 }
                 position: absolute;
-                width: 78%;
-                top: -35%;
-                left: -39%;;
+                width: 79%;
+                top: -40%;
+                left: -31%;
                 
             }
            
         }
         .description{
             display: block;
+            
             @include lgl{
                 text-align: left;
                 width: 44.3%;
+                margin-right: 4.6%;
             }
             > h2{
                 font-size: 28px;
-                margin: 25px 0;
+                margin-bottom: 16px;
                 @include lgl{
-                    font-size: 25px;
+                    font-size: 28px;
                 }
             }
             > p{
                 font-size: 18px;
+                line-height: 1.5;
+                margin-bottom: 65px;
             }
         }
     }

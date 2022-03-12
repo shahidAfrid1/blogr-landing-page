@@ -10,14 +10,14 @@
         padding: 105px 80px 270px;
     }
     @include lgl{
-        padding: 160px 165px 265px;
+        padding: 160px 165px 180px;
         
     }
     > h1{
         font-size: 26px;
         @include lgl{
-            font-size: 40px;
-            margin-bottom: 108px;
+            font-size: 37px;
+            margin-bottom: 95px;
         }
     }
     .container{
@@ -50,9 +50,9 @@
                     display: none;
                 }
                 position: absolute;
-                width: 78%;
-                top: -64%;
-                left: 60%;
+                width: 80%;
+                top: -50%;
+                left: 56.5%;
                 
             }
            
@@ -65,14 +65,16 @@
             }
             > h2{
                 font-size: 28px;
-                margin: 25px 0;
+                margin-bottom: 26px;
                 @include lgl{
-                    font-size: 25px;
+                    font-size: 27.5px;
 
                 }
             }
             > p{
-                font-size: 18px;
+                font-size: 15.6px;
+                line-height: 1.8;
+                margin-bottom: 70px;
             }
         }
     }
