@@ -778,11 +778,12 @@ footer .logo {
 }
 
 footer .links {
-  margin-bottom: 0;
+  margin-bottom: 35px;
 }
 
 @media (min-width: 769px) {
   footer .links {
+    margin: 0;
     padding-left: 35px;
     grid-row: 1/-1;
     margin-bottom: 10px;
